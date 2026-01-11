@@ -4,7 +4,7 @@ import {
   type FetchArgs,
   type FetchBaseQueryError,
 } from '@reduxjs/toolkit/query';
-import type { RootState } from '../store';
+import type { RootState } from '../../redux/store';
 import { AUTH_API_ROOT } from './authApi';
 import { logout } from './authSlice';
 

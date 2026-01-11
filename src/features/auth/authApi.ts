@@ -1,4 +1,4 @@
-import { apiSlice } from '../apiSlice';
+import { apiSlice } from '../../redux/apiSlice';
 import type { User } from '../user/userSlice';
 
 export const AUTH_API_ROOT = '/auth';

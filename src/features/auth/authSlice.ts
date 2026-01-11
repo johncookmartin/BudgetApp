@@ -1,6 +1,6 @@
 import { createSlice, isAnyOf } from '@reduxjs/toolkit';
 import type { User } from '../user/userSlice';
-import type { RootState } from '../store';
+import type { RootState } from '../../redux/store';
 import { authApi, type AuthResponse } from './authApi';
 
 export interface AuthState {
