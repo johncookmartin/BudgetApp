@@ -38,7 +38,7 @@ const Navbar = () => {
         console.error('Logout failed:', error);
       }
     }
-    navigate('/login');
+    navigate('/');
   };
 
   return (
@@ -71,15 +71,15 @@ const Navbar = () => {
             }}
           >
             <MenuItem onClick={handleClose}>
-              <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <Link
+                to="/dashboard"
+                style={{ textDecoration: 'none', color: 'inherit' }}
+              >
                 Home
               </Link>
             </MenuItem>
             <MenuItem onClick={handleClose}>
-              <Link
-                to="/login"
-                style={{ textDecoration: 'none', color: 'inherit' }}
-              >
+              <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
                 Login
               </Link>
             </MenuItem>
@@ -93,7 +93,7 @@ const Navbar = () => {
             </MenuItem>
           </Menu>
           <Typography variant={'h4'} component={'div'} sx={{ flexGrow: 1 }}>
-            Mui Playground
+            Cook-Martin Budget App
           </Typography>
           <Button color={'inherit'} onClick={handleLoginLogout}>
             {user ? 'Logout' : 'Login'}
